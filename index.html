@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Disha Patil | Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Disha Patil</h1>
+    <p>Computer Engineering Student</p>
+  </header>
+
+  <div id="hero-image">
+    <img src="https://wallpaperaccess.com/full/2675399.jpg" alt="Girl learning tech" />
+  </div>
+
+  <nav class="tabs">
+    <button class="tab-button active" data-tab="about">ABOUT ME</button>
+    <button class="tab-button" data-tab="skills">SKILLS</button>
+    <button class="tab-button" data-tab="projects">PROJECTS</button>
+    <button class="tab-button" data-tab="certificates">CERTIFICATES</button>
+    <button class="tab-button" data-tab="contact">CONTACT</button>
+  </nav>
+
+  <main>
+    <section id="about" class="tab-content active">
+      <h2>About Me</h2>
+      <p>
+          Hi! I'm <strong>Disha Patil</strong>, a first-year B.Tech student specializing in Computer Engineering. I'm deeply passionate about technology and love diving into the world of code, one line at a time. As I begin my journey in this field, I'm eager to build a strong foundation in programming, problem-solving, and system design.
+        </p>
+        
+        <p>
+          I'm currently learning C, Python, HTML & CSS, and exploring the basics of Linux. I enjoy challenging myself with mini-projects that push my creativity and improve my skills. I believe that consistent learning, curiosity, and experimentation are key to growth in tech.
+        </p>
+        
+        <p>
+          Beyond the screen, I find joy in sketching, observing art, and discovering the latest tech innovations. I’m also passionate about self-improvement and enjoy staying organized with to-do lists and productivity tools.
+        </p>
+        
+        <p>
+          I’m excited to collaborate on projects, attend hackathons, and contribute to open-source communities in the near future. My goal is to evolve as a developer who not only writes code, but also creates meaningful solutions that make a difference.
+        </p>
+        
+      </p>
+    </section>
+
+    <section id="skills" class="tab-content">
+      <h2>Skills</h2>
+      <div class="card-container">
+        <div class="card">C Programming</div>
+        <div class="card">HTML & CSS</div>
+        <div class="card">Python (Basic)</div>
+        <div class="card">Problem Solving</div>
+        <div class="card">Linux Basics</div>
+      </div>
+    </section>
+
+    <section id="projects" class="tab-content">
+      <h2>Projects</h2>
+      <div class="card-container">
+        <a href="https://your-portfolio-link.com" target="_blank" class="card">🌐 Design Thinking Project</a>
+        <a href="https://github.com/dishapatil/calculator" target="_blank" class="card">🧮 Linux Project</a>
+      </div>
+    </section>
+
+    <section id="certificates" class="tab-content">
+      <h2>Certificates</h2>
+      <div class="card-container">
+        <a href="https://coursera.org/certificate/python" target="_blank" class="card">🐍 Python essential 1 – Cisco</a>
+        <a href="https://simplilearn.com/certificate/linux" target="_blank" class="card">🐍 Python essentiaL 2 – Cisco</a>
+        <a href="https://youtube.com/git-course" target="_blank" class="card">🔧linux - simplilearn</a>
+      </div>
+    </section>
+
+    <section id="contact" class="tab-content">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:disha@example.com">disha@example.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/disha-patil" target="_blank">linkedin.com/in/disha-patil</a></p>
+      <p>GitHub: <a href="https://github.com/dishapatil" target="_blank">github.com/dishapatil</a></p>
+      <p>Address : Alandi ,Pune </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Disha Patil</p>
+  </footer>
+
+  <script>
+    const buttons = document.querySelectorAll(".tab-button");
+    const tabs = document.querySelectorAll(".tab-content");
+
+    buttons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const target = btn.getAttribute("data-tab");
+
+        tabs.forEach(tab => {
+          tab.classList.remove("active");
+        });
+
+        buttons.forEach(b => {
+          b.classList.remove("active");
+        });
+
+        document.getElementById(target).classList.add("active");
+        btn.classList.add("active");
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  header {
+    background: linear-gradient(to right, #4a00e0, #8e2de2);
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  header h1 {
+    font-size: 4rem;
+  }
+  
+  header p {
+    font-size: 1.5rem;
+    color: #ddd;
+  }
+  
+  #hero-image img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  nav.tabs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #111;
+    padding: 40px 10px;
+    gap: 30px;
+  }
+  
+  .tab-button {
+    background: linear-gradient(to right, #4a00e0, #8e2de2);
+    color: white;
+    padding: 25px 50px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    box-shadow: 0 0 12px rgba(142, 45, 226, 0.6);
+  }
+  
+  .tab-button:hover,
+  .tab-button.active {
+    transform: scale(1.1);
+    background: #5f27cd;
+  }
+  
+  .tab-content {
+    display: none;
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .tab-content.active {
+    display: block;
+  }
+  
+  h2 {
+    font-size: 2.4rem;
+    color: #8e2de2;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #4a00e0;
+    display: inline-block;
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 30px;
+    justify-content: center;
+  }
+  
+  .card {
+    background: #111;
+    border: 1px solid #333;
+    padding: 25px;
+    border-radius: 14px;
+    width: 280px;
+    text-align: center;
+    color: white;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    box-shadow: 0 0 10px #4a00e0;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    background: #222;
+    border-color: #8e2de2;
+    box-shadow: 0 0 15px #8e2de2;
+  }
+  
+  a {
+    color: #f3b875;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 25px;
+    background: #111;
+    color: #888;
+  }
+  
